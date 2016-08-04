@@ -21,10 +21,20 @@
 # Write your functions below:
 # Body
 
+def check_fermat(a, b, c, n):
+    if n > 2 and a^n + b^n == c^n:
+        print("Holy smokes, Fermat was wrong!")
+        
+    else:
+        print("No, that doesn't work.")
 
 
-
-
+def check_fermat_ints():
+    aa = input("Input value for a: ")
+    bb = input("Input value for b: ")
+    cc = input("Input value for c: ")
+    nn = input("Input value for n: ")
+    check_fermat(int(aa), int(bb), int(cc), int(nn))
 
 
 
@@ -34,11 +44,12 @@
 def main():
     """Call your function within this function.
     When complete have one function call in this function:
-    check_fermat_ints(1,2,3,4)
+    check_fermat_ints()
     and two functions defined in the body:
     check_fermat_ints()
     check_fermat()
     """
+    check_fermat_ints()
     print("Hello World!")
 
 

@@ -29,10 +29,20 @@
 # Write your functions below:
 # Body
 
+#def do_twice(func, value):
+#    func(value)
+#    func(value)
+#    print_twice('spam')
+#    print_twice('spam')
 
+def print_twice(string):
+    print(string)
+    print(string)
 
-
-
+def do_four(func, value):
+    func(value)
+    func(value)
+    
 
 
 # Write your functions above:
@@ -43,6 +53,7 @@ def main():
     do_four(print_twice, [some_value])
     """
     print("Hello World!")
+    do_four(print_twice, "c'mon!")
     
 
 
